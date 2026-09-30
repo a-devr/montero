@@ -1,0 +1,200 @@
+/* ===== MONTERO · estilos.css (coincide con las clases de index.html) ===== */
+*{margin:0;padding:0;box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{min-height:100vh;font-family:"Montserrat",Arial,sans-serif;color:#fff;background:#0a4f86;overflow-x:hidden}
+body.modal-open,body.cart-open{overflow:hidden}
+button{font:inherit;color:inherit;cursor:pointer}
+a{color:inherit;text-decoration:none}
+
+/* Fondo */
+.site-background{position:fixed;inset:0;z-index:-1;
+  background:linear-gradient(rgba(0,35,55,.15),rgba(0,25,40,.3)),url("./fondo.png") center/cover no-repeat}
+
+.app{max-width:1100px;margin:0 auto;padding:16px 16px 30px;position:relative}
+
+/* Encabezado */
+.top-header{display:flex;justify-content:flex-end;align-items:flex-start}
+.order-button{position:fixed;top:16px;left:16px;z-index:1000;height:42px;padding:0 16px;display:flex;align-items:center;gap:8px;
+  border:1px solid rgba(255,255,255,.45);border-radius:999px;font-size:13px;font-weight:700;
+  background:linear-gradient(135deg,rgba(0,65,94,.95),rgba(0,105,145,.95));box-shadow:0 5px 15px rgba(0,0,0,.35)}
+.order-count{min-width:22px;height:22px;border-radius:50%;background:#fff;color:#006b94;display:grid;place-items:center;font-size:12px;font-weight:800}
+
+.delivery-box{width:250px;padding:12px 14px;border-radius:14px;background:rgba(0,45,65,.85);
+  border:1px solid rgba(60,220,255,.6);box-shadow:0 8px 25px rgba(0,0,0,.35);backdrop-filter:blur(7px)}
+.delivery-header{display:flex;gap:10px;align-items:center;margin-bottom:8px}
+.delivery-icon{font-size:22px}
+.delivery-header h2{font-size:16px;font-weight:800;line-height:1}
+.delivery-header p{font-size:11px;color:#d9f7ff;margin-top:2px}
+.delivery-phone{display:flex;align-items:center;gap:9px;padding:6px 0;border-top:1px solid rgba(255,255,255,.18)}
+.phone-icon{font-size:22px;color:#25e38a}
+.phone-information small{display:block;font-size:10px;color:#c8e5ed}
+.phone-information strong{font-size:15px;letter-spacing:.03em}
+
+/* Portada */
+.hero-section{display:flex;flex-direction:column;align-items:center;margin-top:-6px}
+.logo-container{display:flex;justify-content:center;width:100%}
+.restaurant-logo{display:block;width:clamp(200px,32vw,340px);height:auto;object-fit:contain;filter:drop-shadow(0 6px 10px rgba(0,0,0,.35))}
+.hero-title{text-align:center;margin:10px 0 24px}
+.hero-title h1{font-family:"Playfair Display",Georgia,serif;font-weight:600;font-size:clamp(36px,7vw,62px);line-height:1.05;text-shadow:0 3px 12px rgba(0,0,0,.55)}
+.hero-title h1 span{font-style:italic;font-weight:500}
+.title-decoration{display:flex;justify-content:center;align-items:center;gap:10px;margin:6px 0}
+.title-decoration span{width:46px;height:1px;background:rgba(255,255,255,.85)}
+.hero-title p{font-size:clamp(11px,2.4vw,14px);letter-spacing:.35em;font-weight:600;text-shadow:0 2px 6px rgba(0,0,0,.6)}
+body:has(#categoryPage:not([hidden])) .hero-title{display:none}
+
+/* Categorías */
+.categories-grid{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 16px}
+.category-card{display:flex;align-items:center;gap:14px;width:100%;min-height:84px;padding:12px 18px;text-align:left;
+  border-radius:16px;border:1px solid rgba(255,255,255,.6);background:linear-gradient(135deg,rgba(255,255,255,.18),rgba(0,95,145,.45));
+  backdrop-filter:blur(5px);box-shadow:0 6px 18px rgba(0,30,70,.28);transition:transform .2s,background .2s}
+.category-card:hover{transform:translateY(-3px);background:linear-gradient(135deg,rgba(255,255,255,.26),rgba(0,120,170,.55))}
+.category-icon{flex:none;width:44px;text-align:center;font-size:30px}
+.category-name{flex:1;font-size:13px;font-weight:700;letter-spacing:.08em;line-height:1.25;text-transform:uppercase}
+.category-arrow{flex:none;width:26px;height:26px;border:1.5px solid #fff;border-radius:50%;display:grid;place-items:center;font-size:11px}
+
+.promo-card{grid-column:span 2;border-color:#ffc14d;background:linear-gradient(135deg,rgba(255,170,30,.38),rgba(0,95,145,.5))}
+.promo-card .category-icon{color:#ffd77a}
+
+.category-icon img,.category-page-icon img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 0 4px rgba(120,220,255,.6))}
+.category-icon svg,.category-page-icon svg{padding:4px;width:100%;height:100%;fill:none;stroke:#fff;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 0 5px rgba(120,220,255,.75))}
+.category-icon{width:50px;height:50px}
+.category-page-icon svg,.category-page-icon img{width:32px;height:32px}
+.promo-card .category-icon svg{stroke:#ffd77a;filter:drop-shadow(0 0 5px rgba(255,190,60,.7))}
+
+/* Página de categoría */
+.category-page{max-width:1000px;margin:0 auto}
+.back-button{display:inline-flex;align-items:center;gap:8px;padding:9px 18px;margin-bottom:20px;border-radius:999px;
+  border:1px solid rgba(255,255,255,.45);background:rgba(0,54,78,.8);font-size:12px;font-weight:800;letter-spacing:.06em}
+.category-page-header{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.category-page-icon{width:58px;height:58px;border-radius:50%;border:1.5px solid #fff;display:grid;place-items:center;font-size:24px;background:rgba(0,50,70,.35)}
+.category-page-header h2{font-family:"Playfair Display",Georgia,serif;font-size:clamp(24px,5vw,34px)}
+.category-page-header p{font-size:13px;opacity:.9}
+.category-search{margin-bottom:20px}
+.search-label{display:block;font-size:12px;margin-bottom:6px;opacity:.9}
+.search-box{position:relative}
+.search-box i{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:#5a7f90}
+.search-box input{width:100%;height:46px;padding:0 14px 0 42px;border:none;border-radius:12px;font:inherit;font-size:15px;outline:none}
+
+/* Productos */
+.products-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.product-card{display:flex;flex-direction:column;overflow:hidden;border-radius:18px;background:rgba(255,255,255,.96);color:#00334d;box-shadow:0 10px 28px rgba(0,0,0,.25)}
+.product-image{height:160px;background:#dcecf3}
+.product-image img{width:100%;height:100%;object-fit:cover;display:block}
+.product-image-placeholder{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:#7aa3b5;font-size:12px}
+.product-image-placeholder i{font-size:30px}
+.product-information{display:flex;flex-direction:column;flex:1;padding:14px 16px 16px}
+.product-category-label{font-size:10px;letter-spacing:.12em;font-weight:700;color:#0a8db5}
+.product-information h3{font-size:16px;margin:4px 0 6px;color:#003b59}
+.product-information p{font-size:13px;line-height:1.45;color:#58717c;margin-bottom:12px}
+.product-card-bottom{margin-top:auto;display:flex;justify-content:space-between;align-items:center}
+.product-card-bottom strong{font-size:19px;color:#007ea8;font-weight:800}
+.product-view-button{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border:none;border-radius:10px;
+  background:linear-gradient(135deg,#00a9d2,#007ca5);font-size:12px;font-weight:800}
+.no-products{grid-column:1/-1;text-align:center;padding:40px 10px;opacity:.9}
+.no-products i{font-size:34px;margin-bottom:10px}
+
+/* Modal de producto */
+.product-modal{position:fixed;inset:0;z-index:3000;display:flex;align-items:center;justify-content:center;padding:16px}
+.product-modal-overlay{position:absolute;inset:0;background:rgba(0,18,30,.78);backdrop-filter:blur(6px)}
+.product-modal-content{position:relative;width:min(520px,100%);max-height:90vh;overflow-y:auto;border-radius:22px;
+  background:linear-gradient(145deg,#003d5b,#002c43);border:2px solid rgba(75,220,255,.6);box-shadow:0 25px 70px rgba(0,0,0,.6)}
+.modal-close{position:absolute;top:12px;right:12px;z-index:2;width:38px;height:38px;border-radius:50%;
+  border:1px solid rgba(255,255,255,.4);background:rgba(0,0,0,.35);font-size:18px}
+.modal-product-image img{width:100%;max-height:260px;object-fit:cover;display:block}
+.modal-product-information{padding:26px 22px 22px}
+.modal-product-category{font-size:11px;letter-spacing:.14em;font-weight:700;color:#6de6ff}
+.modal-product-information h2{font-family:"Playfair Display",Georgia,serif;font-size:26px;margin:6px 0 8px;padding-right:30px}
+.modal-product-information p{font-size:14px;line-height:1.5;opacity:.9}
+.modal-product-bottom{display:flex;justify-content:space-between;align-items:center;margin:20px 0}
+.modal-product-price{font-size:26px;color:#6de6ff;font-weight:800}
+.quantity-control{display:flex;align-items:center;gap:14px;padding:4px 8px;border-radius:999px;background:rgba(255,255,255,.1)}
+.quantity-control button{width:34px;height:34px;border-radius:50%;border:none;background:#fff;color:#006b94;font-size:20px;font-weight:800}
+.quantity-control span{min-width:18px;text-align:center;font-weight:800;font-size:17px}
+.add-product-button{width:100%;height:50px;border:none;border-radius:14px;display:flex;align-items:center;justify-content:center;gap:9px;
+  background:linear-gradient(135deg,#00b5dd,#007ea6);font-size:14px;font-weight:800;letter-spacing:.05em}
+
+/* Carrito */
+.cart-overlay{position:fixed;inset:0;z-index:4999;background:rgba(0,20,30,.6);backdrop-filter:blur(3px)}
+.cart-panel{position:fixed;top:0;right:-440px;z-index:5000;width:min(420px,92vw);height:100vh;display:flex;flex-direction:column;padding:22px;
+  background:linear-gradient(180deg,#003b58,#00263b);border-left:2px solid rgba(87,220,255,.45);box-shadow:-15px 0 40px rgba(0,0,0,.4);transition:right .35s ease}
+.cart-panel.active{right:0}
+.cart-panel-header{display:flex;justify-content:space-between;align-items:center;padding-bottom:14px;margin-bottom:12px;border-bottom:1px solid rgba(255,255,255,.2)}
+.cart-panel-header span{font-size:11px;letter-spacing:.14em;color:#6de6ff;font-weight:700}
+.cart-panel-header h2{font-size:26px}
+.cart-close-button{width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.4);background:rgba(255,255,255,.08);font-size:18px}
+.cart-items{flex:1;overflow-y:auto}
+.empty-cart{display:flex;flex-direction:column;align-items:center;text-align:center;padding:50px 10px;opacity:.85;gap:6px}
+.empty-cart i{font-size:38px;margin-bottom:8px}
+.cart-item{display:flex;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.13)}
+.cart-item-information{flex:1}
+.cart-item-information h3{font-size:14px;margin-bottom:3px}
+.cart-item-information span{font-size:13px;color:#9fe9ff}
+.cart-item-controls{display:flex;align-items:center;gap:9px}
+.cart-item-controls button{width:28px;height:28px;border-radius:50%;border:1px solid rgba(255,255,255,.5);background:transparent;font-size:16px}
+.remove-cart-item{border:none;background:none;color:#ff9aa2;font-size:15px}
+.cart-summary{padding-top:14px;border-top:1px solid rgba(255,255,255,.2)}
+.cart-total-row{display:flex;justify-content:space-between;align-items:center;padding:14px;border-radius:14px;background:rgba(255,255,255,.07)}
+.cart-total-row span{font-weight:700}
+.cart-total-row strong{font-size:22px;color:#6de6ff}
+.whatsapp-order-title{margin:14px 0 4px;font-size:12px;opacity:.85;text-align:center}
+.whatsapp-order-button{display:flex;align-items:center;justify-content:center;gap:10px;height:48px;margin-top:8px;border-radius:12px;
+  background:linear-gradient(135deg,#25d366,#128c4a);font-weight:800;font-size:15px}
+.whatsapp-order-button i{font-size:22px}
+
+/* Pie */
+.site-footer{text-align:center;margin-top:28px}
+.footer-decoration{display:flex;justify-content:center;align-items:center;gap:10px;margin-bottom:8px}
+.footer-decoration span{width:40px;height:1px;background:rgba(255,255,255,.7)}
+.site-footer p{font-size:11px;letter-spacing:.3em;font-weight:600;color:#d9f7ff}
+
+/* ===== Pantalla de inicio en una sola vista (PC / laptop) ===== */
+.restaurant-logo{flex:none;max-width:100%;object-fit:contain}
+@media (min-width:851px) and (min-height:560px){
+  body:has(#categoriesPage:not([hidden])){overflow:hidden}
+  body:has(#categoriesPage:not([hidden])) .app{height:100vh;height:100dvh;display:grid;grid-template-rows:auto auto auto;align-content:center;justify-items:stretch;padding:8px 16px}
+  body:has(#categoriesPage:not([hidden])) .top-header{position:fixed;top:12px;right:16px;padding:0;z-index:1000}
+  body:has(#categoriesPage:not([hidden])) .hero-section{grid-row:1;margin:0}
+  body:has(#categoriesPage:not([hidden])) .logo-container{flex:none}
+  body:has(#categoriesPage:not([hidden])) .restaurant-logo{width:auto;height:clamp(80px,17vh,180px)}
+  body:has(#categoriesPage:not([hidden])) .hero-title{margin:0 0 clamp(6px,1.4vh,12px)}
+  body:has(#categoriesPage:not([hidden])) .hero-title h1{font-size:clamp(28px,5.4vh,52px)}
+  body:has(#categoriesPage:not([hidden])) .title-decoration{margin:4px 0 6px}
+  body:has(#categoriesPage:not([hidden])) .hero-title p{font-size:clamp(10px,1.5vh,13px)}
+  body:has(#categoriesPage:not([hidden])) .categories-page{grid-row:2;width:100%;height:clamp(300px,54vh,560px)}
+  body:has(#categoriesPage:not([hidden])) .categories-grid{height:100%;width:100%;grid-template-rows:repeat(5,minmax(0,1fr));gap:clamp(6px,1.2vh,12px) 14px}
+  body:has(#categoriesPage:not([hidden])) .category-card{min-height:0;height:100%;padding:0 18px}
+  body:has(#categoriesPage:not([hidden])) .category-icon{width:clamp(30px,5vh,48px);height:clamp(30px,5vh,48px)}
+  body:has(#categoriesPage:not([hidden])) .category-name{font-size:clamp(11px,1.6vh,13px)}
+  body:has(#categoriesPage:not([hidden])) .site-footer{grid-row:3;margin-top:clamp(4px,1vh,10px)}
+  body:has(#categoriesPage:not([hidden])) .footer-decoration{display:none}
+  body:has(#categoriesPage:not([hidden])) .site-footer p{font-size:10px}
+}
+
+/* Tablet */
+@media(max-width:850px){
+  .categories-grid,.products-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .category-card:nth-last-child(2){grid-column:1/-1}
+}
+/* Celular */
+@media(max-width:600px){
+  .app{padding:12px 10px 24px}
+  .top-header{padding-top:52px}
+  .delivery-box{width:100%;display:grid;grid-template-columns:1fr 1fr;column-gap:10px;padding:10px 12px}
+  .delivery-header{grid-column:1/-1}
+  .delivery-phone{border-top:1px solid rgba(255,255,255,.18);gap:7px}
+  .phone-icon{font-size:18px}
+  .phone-information small{font-size:9px}
+  .phone-information strong{font-size:13px}
+  .restaurant-logo{width:min(230px,62vw)}
+  .hero-title{margin:6px 0 16px}
+  .categories-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+  .category-card{min-height:66px;padding:8px 10px;gap:7px;border-radius:14px}
+  .category-icon{width:38px;height:38px}
+  .category-name{font-size:10.5px;letter-spacing:.04em}
+  .category-arrow{display:none}
+  .category-name{min-width:0}
+  .category-card:nth-last-child(2),.promo-card{grid-column:1/-1}
+  .products-grid{grid-template-columns:1fr}
+}
+@media(max-width:360px){.category-name{font-size:9.5px;letter-spacing:.02em}.category-icon{width:32px;height:32px}}
