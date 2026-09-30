@@ -18,17 +18,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     nombre: "Conchas a la parmesana",
                     descripcion: "Deliciosas conchas preparadas al estilo de la casa.",
-                    precio: 15
+                    precio: 17
                 },
                 {
                     nombre: "Conchas a la chalaca",
                     descripcion: "Frescas conchas acompañadas con nuestra preparación especial.",
-                    precio: 15
+                    precio: 17
                 },
                 {
                     nombre: "Tequeños de queso",
                     descripcion: "Crocantes tequeños acompañados con salsa de la casa.",
-                    precio: 12
+                    precio: 14
                 }
             ]
         },
@@ -40,22 +40,22 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     nombre: "Ceviche de pescado",
                     descripcion: "Pescado fresco preparado con limón, cebolla y ají.",
-                    precio: 18
+                    precio: 20
                 },
                 {
                     nombre: "Ceviche mixto",
                     descripcion: "Pescado y mariscos frescos preparados al estilo Montero.",
-                    precio: 20
+                    precio: 22
                 },
                 {
                     nombre: "Ceviche de pota",
                     descripcion: "Pota fresca preparada al estilo tradicional.",
-                    precio: 15
+                    precio: 17
                 },
                 {
                     nombre: "Ceviche de mariscos",
                     descripcion: "Selección de mariscos frescos preparados al momento.",
-                    precio: 25
+                    precio: 27
                 }
             ]
         },
@@ -67,27 +67,27 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     nombre: "Chicharrón mixto",
                     descripcion: "Combinación de pescado y mariscos crocantes.",
-                    precio: 25
+                    precio: 27
                 },
                 {
                     nombre: "Chicharrón de pescado",
                     descripcion: "Pescado fresco, crocante y dorado.",
-                    precio: 20
+                    precio: 22
                 },
                 {
                     nombre: "Chicharrón de pota",
                     descripcion: "Pota crocante acompañada de guarnición.",
-                    precio: 16
+                    precio: 18
                 },
                 {
                     nombre: "Jalea mixta",
                     descripcion: "Pescado y mariscos crocantes para compartir.",
-                    precio: 25
+                    precio: 28
                 },
                 {
                     nombre: "Jalea de pescado",
                     descripcion: "Pescado crocante acompañado de guarnición.",
-                    precio: 20
+                    precio: 22
                 }
             ]
         },
@@ -99,22 +99,22 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     nombre: "Arroz con mariscos",
                     descripcion: "Arroz preparado con selección de mariscos.",
-                    precio: 25
+                    precio: 27
                 },
                 {
                     nombre: "Arroz chaufa de mariscos",
                     descripcion: "Chaufa preparado con mariscos frescos.",
-                    precio: 25
+                    precio: 27
                 },
                 {
                     nombre: "Arroz chaufa mixto",
                     descripcion: "Arroz chaufa con pescado y mariscos.",
-                    precio: 22
+                    precio: 24
                 },
                 {
                     nombre: "Arroz chaufa de pollo",
                     descripcion: "Clásico arroz chaufa preparado al estilo de la casa.",
-                    precio: 20
+                    precio: 22
                 }
             ]
         },
@@ -126,17 +126,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     nombre: "Dúo de pescado con chicharrón",
                     descripcion: "Pescado acompañado de delicioso chicharrón.",
-                    precio: 25
+                    precio: 27
                 },
                 {
                     nombre: "Ceviche mixto con chicharrón",
                     descripcion: "Ceviche mixto acompañado de chicharrón.",
-                    precio: 30
+                    precio: 32
                 },
                 {
                     nombre: "Ceviche mixto con arroz chaufa",
                     descripcion: "Ceviche mixto acompañado con arroz chaufa.",
-                    precio: 35
+                    precio: 37
                 }
             ]
         },
@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     nombre: "Triple marino",
                     descripcion: "Ceviche, chicharrón y arroz preparado para compartir.",
-                    precio: 30
+                    precio: 32
                 }
             ]
         },
@@ -160,17 +160,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     nombre: "Sudado de pescado",
                     descripcion: "Pescado fresco preparado en nuestro sudado tradicional.",
-                    precio: 22
+                    precio: 24
                 },
                 {
                     nombre: "Sudado de pescado con mariscos",
                     descripcion: "Sudado de pescado acompañado con mariscos.",
-                    precio: 25
+                    precio: 27
                 },
                 {
                     nombre: "Parihuela mixta",
                     descripcion: "Preparación marina con pescado y mariscos.",
-                    precio: 25
+                    precio: 27
                 }
             ]
         },
@@ -182,22 +182,22 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     nombre: "Filete a lo macho",
                     descripcion: "Filete acompañado de salsa especial de mariscos.",
-                    precio: 26
+                    precio: 28
                 },
                 {
                     nombre: "Filete en salsa de camarones",
                     descripcion: "Filete acompañado con cremosa salsa de camarones.",
-                    precio: 27
+                    precio: 29
                 },
                 {
                     nombre: "Filete en salsa de langostinos",
                     descripcion: "Filete acompañado con salsa de langostinos.",
-                    precio: 27
+                    precio: 29
                 },
                 {
                     nombre: "Filete en salsa de mariscos",
                     descripcion: "Filete acompañado con nuestra salsa de mariscos.",
-                    precio: 27
+                    precio: 29
                 }
             ]
         },
@@ -209,27 +209,27 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     nombre: "Lomo saltado",
                     descripcion: "Clásico lomo saltado acompañado de papas y arroz.",
-                    precio: 20
+                    precio: 22
                 },
                 {
                     nombre: "Bistec a lo pobre",
                     descripcion: "Bistec acompañado con papas, arroz y huevo.",
-                    precio: 25
+                    precio: 27
                 },
                 {
                     nombre: "Bistec apanado",
                     descripcion: "Bistec apanado acompañado de guarnición.",
-                    precio: 20
+                    precio: 22
                 },
                 {
                     nombre: "Pollo saltado",
                     descripcion: "Pollo salteado al estilo tradicional.",
-                    precio: 18
+                    precio: 20
                 },
                 {
                     nombre: "Milanesa de pollo",
                     descripcion: "Milanesa de pollo acompañada de guarnición.",
-                    precio: 18
+                    precio: 20
                 }
             ]
         },
@@ -241,17 +241,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     nombre: "Arroz",
                     descripcion: "Porción de arroz.",
-                    precio: 3
+                    precio: 5
                 },
                 {
                     nombre: "Papas fritas",
                     descripcion: "Porción de papas fritas.",
-                    precio: 5
+                    precio: 7
                 },
                 {
                     nombre: "Yucas doradas",
                     descripcion: "Porción de yucas doradas.",
-                    precio: 5
+                    precio: 7
                 }
             ]
         },
@@ -263,17 +263,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     nombre: "Criolla",
                     descripcion: "Sopa criolla preparada al estilo tradicional.",
-                    precio: 15
+                    precio: 17
                 },
                 {
                     nombre: "Dieta de pollo",
                     descripcion: "Sopa ligera de pollo.",
-                    precio: 15
+                    precio: 17
                 },
                 {
                     nombre: "Sustancia",
                     descripcion: "Sopa caliente y reconfortante.",
-                    precio: 15
+                    precio: 17
                 }
             ]
         },
