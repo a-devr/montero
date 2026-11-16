@@ -40,22 +40,22 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     nombre: "Ceviche de pescado",
                     descripcion: "Pescado fresco preparado con limón, cebolla y ají.",
-                    precio: 20
+                    precio: 22
                 },
                 {
                     nombre: "Ceviche mixto",
                     descripcion: "Pescado y mariscos frescos preparados al estilo Montero.",
-                    precio: 22
+                    precio: 27
                 },
                 {
                     nombre: "Ceviche de pota",
                     descripcion: "Pota fresca preparada al estilo tradicional.",
-                    precio: 17
+                    precio: 22
                 },
                 {
                     nombre: "Ceviche de mariscos",
                     descripcion: "Selección de mariscos frescos preparados al momento.",
-                    precio: 27
+                    precio: 32
                 }
             ]
         },
@@ -67,27 +67,28 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     nombre: "Chicharrón mixto",
                     descripcion: "Combinación de pescado y mariscos crocantes.",
-                    precio: 27
+                    precio: 30
                 },
                 {
                     nombre: "Chicharrón de pescado",
                     descripcion: "Pescado fresco, crocante y dorado.",
                     precio: 22
                 },
+                
                 {
                     nombre: "Chicharrón de pota",
                     descripcion: "Pota crocante acompañada de guarnición.",
-                    precio: 18
+                    precio: 20
                 },
                 {
                     nombre: "Jalea mixta",
                     descripcion: "Pescado y mariscos crocantes para compartir.",
-                    precio: 28
+                    precio: 30
                 },
                 {
                     nombre: "Jalea de pescado",
                     descripcion: "Pescado crocante acompañado de guarnición.",
-                    precio: 22
+                    precio: 27
                 }
             ]
         },
@@ -99,17 +100,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     nombre: "Arroz con mariscos",
                     descripcion: "Arroz preparado con selección de mariscos.",
-                    precio: 27
+                    precio: 24
                 },
                 {
                     nombre: "Arroz chaufa de mariscos",
                     descripcion: "Chaufa preparado con mariscos frescos.",
-                    precio: 27
+                    precio: 24
                 },
                 {
                     nombre: "Arroz chaufa mixto",
                     descripcion: "Arroz chaufa con pescado y mariscos.",
-                    precio: 24
+                    precio: 27
                 },
                 {
                     nombre: "Arroz chaufa de pollo",
@@ -136,7 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     nombre: "Ceviche mixto con arroz chaufa",
                     descripcion: "Ceviche mixto acompañado con arroz chaufa.",
-                    precio: 37
+                    precio: 32
                 }
             ]
         },
@@ -148,7 +149,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     nombre: "Triple marino",
                     descripcion: "Ceviche, chicharrón y arroz preparado para compartir.",
-                    precio: 32
+                    precio: 37
                 }
             ]
         },
